@@ -1,0 +1,102 @@
+* {
+  /* bordes eliminados */
+  margin: 0;
+  /* rellenos que vienen por defaul */
+  padding: 0;
+  /* fonts Kedebideri */
+  font-family: "Kedebideri", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  /* El documento ocupa toda la altura */
+  height: 100%;
+}
+
+/* Compensar el espacio del header fijo */
+body {
+  padding-top: 130px;
+  display: flex;
+  /* Usamos flexbox */
+  flex-direction: column;
+  /* Colocamos header, main y footer en columna */
+}
+
+main {
+  /* El main ocupa todo el espacio disponible */
+  flex: 1;  
+}
+
+
+footer {
+  /* Empuja el footer al fondo */
+  margin-top: auto;  
+}
+
+.logo {
+  max-height: 50px;
+}
+
+/* Estilos para los iconos del footer */
+.footer-icon {
+  max-width: 40px;
+  height: auto;
+}
+
+.icon {
+  max-width: 25px;
+  height: auto;
+}
+
+.carousel-item img {
+  height: 1000px;
+  /* altura fija */
+  object-fit: contain;
+  /* ajusta la imagen sin recortar */
+  background-color: #e8eaeb;
+  /* color de relleno en los bordes */
+}
+
+.card-img-top {
+  height: 250px;
+  /* ajustá según tu diseño */
+  object-fit: cover;
+  /* recorta manteniendo proporción */
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Carrusel ocupa 80% en pantallas grandes, 100% en móviles */
+#carouselExampleAutoplaying {
+  width: 80%;
+}
+
+.footer-icon {
+  width: 5em;
+}
+
+.icon {
+  width: 2em;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleAutoplaying {
+    width: 100%;
+  }
+}
